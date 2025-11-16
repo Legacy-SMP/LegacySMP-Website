@@ -25,6 +25,11 @@ body {
     margin: 0;
 }
 
+.rule-page {
+    background: url("images/ruleicon_test.png");
+    background-size: cover;
+}
+
 h1 {
     color: white;
     text-align: left;
