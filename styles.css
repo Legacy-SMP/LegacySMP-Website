@@ -352,6 +352,7 @@ p {
     border: 2px solid black;
     object-fit: cover;
     background: #00000033;
+}
 
 .rule-card {
     transition: transform 0.25s ease;
