@@ -28,6 +28,7 @@ body {
 .rule-page {
     background: url("images/ruleicon_test.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
