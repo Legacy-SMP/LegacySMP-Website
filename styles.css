@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "MCBold";
     src: url("fonts/Bold.otf") format("opentype");
@@ -141,15 +142,15 @@ p {
 
 /* Button CSS */
 .button-wrapper {
+    margin: 0 auto;
     position: absolute;
     top: 92%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     gap: 251px;
     z-index: 10;
 }
+
 
 .mc-button {
     cursor: pointer;
@@ -232,12 +233,11 @@ p {
     padding-bottom: 0;
 }
 
-.center {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+/* hover effect (features) */
+.square-with-text:hover {
+    transform: translateY(-6px) scale(1.05);
 }
+
 
 /* Squares */
 .square-row {
@@ -253,6 +253,8 @@ p {
     width: 200px;
     display: flex;
     flex-direction: column;
+    
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .square {
@@ -362,7 +364,7 @@ p {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    margin-top: 84px; 
+    margin-top: 19px; 
 }
 
 .side-btn {
@@ -399,5 +401,3 @@ p {
 .side-btn.right img {
     transform: scaleX(-1);
 }
-
-
