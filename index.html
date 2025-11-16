@@ -7,6 +7,21 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
+        <script>
+            window.addEventListener("scroll", () => {
+                const bigTitle = document.querySelector(".minecraft-title");
+                const smallTitle = document.querySelector(".top-title-small");
+
+                if (window.scrollY > 100) {
+                    bigTitle.style.opacity = "0";
+                    smallTitle.style.opacity = "1";
+                } else {
+                    bigTitle.style.opacity = "1";
+                    smallTitle.style.opacity = "0";
+                }
+            });
+        </script>
+
         <div class="top-bar">
             <nav>
                 <a href="index.html">Home</a>
@@ -14,6 +29,7 @@
                 <a href="https://linktr.ee/OriTitan">Socials</a>
                 <a href="http://map.legacy-smp.uk/">Maps</a>
                 <a href="http://discord.legacy-smp.uk/">Discord</a>
+                <img src="images/minecraft_title.png" class="top-title-small" />
             </nav>
             <img src="images/minecraft_title.png" class="minecraft-title" />
         </div>
@@ -150,7 +166,7 @@
                     id="ytPlayer"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/LLqBYgLkMTo"
+                    src="https://www.youtube.com/embed/REm3hyA4D_s"
                     allowfullscreen>
                 </iframe>
 
@@ -160,7 +176,7 @@
             </div>
 
             <script>
-                const videos = ["LLqBYgLkMTo", "LLqBYgLkMTo", "LLqBYgLkMTo"];
+                const videos = ["REm3hyA4D_s", "ipI41GVSwBs", "sgNrAGMPurA"];
                 let current = 0;
 
                 function updateVideo() {
