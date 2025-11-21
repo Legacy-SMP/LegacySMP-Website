@@ -94,7 +94,7 @@ p {
     top: -1px;
     left: 50%;
     transform: translateX(-50%);
-    width: 409px;
+    width: 400px;
     z-index: 2;
     transition: opacity 0.5s ease;
 }
@@ -156,32 +156,44 @@ p {
 
 /* Button CSS */
 .button-wrapper {
-    margin: 0 auto;
     position: absolute;
-    top: 92%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
     display: flex;
     flex-direction: column;
-    gap: 251px;
-    z-index: 10;
+    align-items: center;
+}
+
+.title-button-wrapper {
+    scale: 1.2;
     position: absolute;
+    bottom: 10;
+    transform: translateX(-50%);
     left: 50%;
-    transform: translateY(-90%);
+    z-index: 50;
 }
 
 
 .mc-button {
     cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    user-select: none;
+    height: var(--btn-size);
+    width: calc(var(--btn-size) * 10);
     background: #999 url("https://i.ibb.co/rb2TWXL/bgbtn.png") center / cover;
     image-rendering: pixelated;
     border: 2px solid #000;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
+    box-shadow:
+        inset -2px -4px #0006,
+        inset 2px 2px #fff7;
 }
+
 
 .small-text {
     color: darkgray;
@@ -195,6 +207,14 @@ p {
 
 .mc-button-link {
     display: block;
+}
+
+.title-button-wrapper {
+    position: absolute;
+    top: 265px;
+    transform: translateX(-50%);
+    
+    z-index: 50;
 }
 
 .mc-button {

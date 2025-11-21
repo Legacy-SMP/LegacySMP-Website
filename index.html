@@ -20,46 +20,78 @@
                     smallTitle.style.opacity = "0";
                 }
             });
+
+            function updateButtonPosition() {
+                const title = document.querySelector(".minecraft-title");
+                const buttonWrapper = document.querySelector(".title-button-wrapper");
+
+                const titleRect = title.getBoundingClientRect();
+                const pageCenterX = titleRect.left + titleRect.width / 2 + 35;
+
+                buttonWrapper.style.left = pageCenterX + "px";
+            }
+
+            window.addEventListener("resize", updateButtonPosition);
+            window.addEventListener("load", updateButtonPosition);
         </script>
 
         <div class="top-bar">
             <nav>
                 <a href="index.html">Home</a>
-                
+
                 <a href="rules.html">Rules</a>
-                
+
                 <a href="https://linktr.ee/OriTitan" target="_blank" rel="noopener noreferrer">Socials</a>
-                
+
                 <a href="http://map.legacy-smp.uk/" target="_blank" rel="noopener noreferrer">Maps</a>
-                
+
                 <a href="http://discord.legacy-smp.uk/" target="_blank" rel="noopener noreferrer">Discord</a>
-                
             </nav>
-        
+
             <img src="images/minecraft_title.png" class="top-title-small" />
             <img src="images/minecraft_title.png" class="minecraft-title" />
         </div>
 
         <div class="image-container">
             <img src="images/smp-image.png" class="smp-image" />
-            <div class="button-wrapper">
-                <a href="join.html">
-                    <div class="mc-button" style="--btn-size: 34px">
-                        <div class="title">Join the SMP Now!</div>
-                    </div>
-                </a>
-            </div>
+        </div>
+
+        <div class="title-button-wrapper">
+            <a href="join.html">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="mc-button" style="--btn-size: 34px">
+                    <div class="title">Join the SMP Now!</div>
+                </div>
+            </a>
         </div>
 
         <div class="content">
             <div class="Intro Sentence">
-            <h1>Welcome to Legacy SMP!</h1>
-            <p>In our minecraft server, we try to turn Modern Minecraft into a nostalgic throwback to the old console edition!</p>
-            <p>Like there used to be on the Xbox 360, Playstation, Nintendo Switch, the Wii U and more!</p>
-            <p>Over time the SMP will expand to further push the recreation of the old versions!</p>
-            <br />
-            <p>The features we have on the Legacy SMP are:</p>
-            <p></p>
+                <h1>Welcome to Legacy SMP!</h1>
+                <p>
+                    In our minecraft server, we try to turn Modern Minecraft into a nostalgic throwback to the old
+                    console edition!
+                </p>
+                <p>Like there used to be on the Xbox 360, Playstation, Nintendo Switch, the Wii U and more!</p>
+                <p>Over time the SMP will expand to further push the recreation of the old versions!</p>
+                <br/>
+                <p>The features we have on the Legacy SMP are:</p>
+                <br/>
             </div>
             <div class="square-row">
                 <div class="square-with-text">
@@ -161,7 +193,7 @@
                 </div>
             </div>
 
-            <h1 style="text-align:center;">Watch some of our Videos!</h1>
+            <h1 style="text-align: center">Watch some of our Videos!</h1>
             <div class="video-wrapper">
                 <button class="side-btn left" onclick="prevVideo()">
                     <img src="images/arrow.png" alt="Previous" />
